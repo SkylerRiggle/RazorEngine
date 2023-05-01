@@ -10,7 +10,7 @@ namespace Razor
 		Game();
 		virtual ~Game();
 
-		void Main();
+		void StartGame();
 	};
 
 	Game* CreateGame();

@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.33529.622
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Razor", "Razor\Razor.vcxproj", "{995A4E63-3509-4DA1-8AF4-9DF176F08426}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{6F63E57E-90E6-4E25-9B27-485045E51FE7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sandbox", "Sandbox\Sandbox.vcxproj", "{302781A1-4111-4856-AA8C-9FF8B4491AC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{995A4E63-3509-4DA1-8AF4-9DF176F08426}.Debug|x64.Build.0 = Debug|x64
 		{995A4E63-3509-4DA1-8AF4-9DF176F08426}.Release|x64.ActiveCfg = Release|x64
 		{995A4E63-3509-4DA1-8AF4-9DF176F08426}.Release|x64.Build.0 = Release|x64
-		{6F63E57E-90E6-4E25-9B27-485045E51FE7}.Debug|x64.ActiveCfg = Debug|x64
-		{6F63E57E-90E6-4E25-9B27-485045E51FE7}.Debug|x64.Build.0 = Debug|x64
-		{6F63E57E-90E6-4E25-9B27-485045E51FE7}.Release|x64.ActiveCfg = Release|x64
-		{6F63E57E-90E6-4E25-9B27-485045E51FE7}.Release|x64.Build.0 = Release|x64
+		{302781A1-4111-4856-AA8C-9FF8B4491AC1}.Debug|x64.ActiveCfg = Debug|x64
+		{302781A1-4111-4856-AA8C-9FF8B4491AC1}.Debug|x64.Build.0 = Debug|x64
+		{302781A1-4111-4856-AA8C-9FF8B4491AC1}.Release|x64.ActiveCfg = Release|x64
+		{302781A1-4111-4856-AA8C-9FF8B4491AC1}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

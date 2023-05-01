@@ -7,7 +7,7 @@ extern Razor::Game* Razor::CreateGame();
 int main(int argc, char* argv[])
 {
 	auto game = Razor::CreateGame();
-	game->Main();
+	game->StartGame();
 	delete game;
 
 	return 0;

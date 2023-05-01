@@ -12,7 +12,7 @@ Game::~Game()
 
 }
 
-void Game::Main()
+void Game::StartGame()
 {
 	while (true);
 }
