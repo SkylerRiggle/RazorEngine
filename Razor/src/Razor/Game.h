@@ -4,11 +4,17 @@
 
 namespace Razor
 {
+	struct GameData 
+	{
+	public:
+		const char* title;
+	};
+
 	class RAZOR_API Game
 	{
 	public:
-		Game();
-		virtual ~Game();
+		Game(GameData gameData);
+		~Game();
 
 		void StartGame();
 	};

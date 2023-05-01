@@ -2,9 +2,8 @@
 
 using namespace Razor;
 
-Game::Game()
+Game::Game(GameData gameData)
 {
-
 }
 
 Game::~Game()

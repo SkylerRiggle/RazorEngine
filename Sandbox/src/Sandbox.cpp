@@ -1,20 +1,11 @@
 #include <Razor.h>
 
-class Sandbox : public Razor::Game
-{
-public:
-	Sandbox()
-	{
-
-	}
-
-	~Sandbox()
-	{
-
-	}
-};
-
 Razor::Game* Razor::CreateGame()
 {
-	return new Sandbox();
+	// Populate the default game data.
+	Razor::GameData gameData{};
+	gameData.title = "Sandbox Game";
+
+	// Return a new game application reference.
+	return new Razor::Game(gameData);
 }
