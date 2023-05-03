@@ -21,3 +21,12 @@ Window::~Window()
 	// Terminate the GLFW library
 	glfwTerminate();
 }
+
+void Window::Update()
+{
+	// Poll window events
+	glfwPollEvents();
+
+	// Swap the window buffers
+	glfwSwapBuffers(glfwWindow);
+}

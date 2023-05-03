@@ -10,6 +10,8 @@ namespace Razor
 		Window();
 		~Window();
 
+		void Update();
+
 	private:
 		GLFWwindow* glfwWindow;
 	};

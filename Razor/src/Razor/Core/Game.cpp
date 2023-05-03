@@ -16,5 +16,8 @@ Game::~Game()
 
 void Game::StartGame()
 {
-	while (true);
+	while (true)
+	{
+		window->Update();
+	}
 }
