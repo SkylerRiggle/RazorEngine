@@ -11,6 +11,8 @@ Window::Window(const char* title, const int defaultWidth, const int defaultHeigh
 	// Create the new window
 	glfwWindow = glfwCreateWindow(defaultWidth, defaultHeight, title, NULL, NULL);
 	// TODO: Assert window is created
+	screenWidth = defaultWidth;
+	screenHeight = defaultHeight;
 
 	// Make the window's current context
 	glfwMakeContextCurrent(glfwWindow);
