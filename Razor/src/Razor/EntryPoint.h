@@ -4,8 +4,10 @@
 
 extern Razor::Game* Razor::CreateGame();
 
+// The application's entry point
 int main(int argc, char* argv[])
 {
+	// Handle the lifetime of the game "application"
 	auto game = Razor::CreateGame();
 	game->StartGame();
 	delete game;
