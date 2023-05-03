@@ -2,14 +2,14 @@
 
 using namespace Razor;
 
-Window::Window()
+Window::Window(const char* title, const int defaultWidth, const int defaultHeight)
 {
 	// Initialize the GLFW library
 	int initResult = glfwInit();
 	// TODO: Assert init succeeded
 
 	// Create the new window
-	glfwWindow = glfwCreateWindow(500, 500, "HELLO WORLD", NULL, NULL);
+	glfwWindow = glfwCreateWindow(defaultWidth, defaultHeight, title, NULL, NULL);
 	// TODO: Assert window is created
 
 	// Make the window's current context

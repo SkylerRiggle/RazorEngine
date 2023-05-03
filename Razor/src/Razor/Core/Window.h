@@ -7,7 +7,7 @@ namespace Razor
 	class Window
 	{
 	public:
-		Window();
+		Window(const char* title, const int defaultWidth, const int defaultHeight);
 		~Window();
 
 		void Update();

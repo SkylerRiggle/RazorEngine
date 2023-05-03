@@ -13,6 +13,8 @@ namespace Razor
 	{
 	public:
 		const char* title;
+		int defaultWidth;
+		int defaultHeight;
 	};
 
 	/// <summary>

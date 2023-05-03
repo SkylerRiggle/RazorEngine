@@ -5,7 +5,7 @@ using namespace Razor;
 Game::Game(GameData gameData)
 {
 	// Create the application's window
-	window = std::make_unique<Window>();
+	window = std::make_unique<Window>(gameData.title, gameData.defaultWidth, gameData.defaultHeight);
 }
 
 Game::~Game()
