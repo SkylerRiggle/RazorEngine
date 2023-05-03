@@ -1,6 +1,8 @@
 #pragma once
 
-#include "Core.h"
+#include "../Core.h"
+#include "Window.h"
+#include <memory>
 
 namespace Razor
 {
@@ -26,6 +28,9 @@ namespace Razor
 		/// Start the game application.
 		/// </summary>
 		void StartGame();
+
+	private:
+		std::unique_ptr<Window> window;
 	};
 
 	/// <summary>

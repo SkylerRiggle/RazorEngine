@@ -1,4 +1,4 @@
 #pragma once
 
-#include "Razor/Game.h"
-#include "Razor/EntryPoint.h"
+#include "Razor/Core/Game.h"
+#include "Razor/Core/EntryPoint.h"

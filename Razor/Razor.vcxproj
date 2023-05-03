@@ -84,11 +84,12 @@
   <ItemGroup>
     <ClInclude Include="src\Razor.h" />
     <ClInclude Include="src\Razor\Core.h" />
-    <ClInclude Include="src\Razor\EntryPoint.h" />
-    <ClInclude Include="src\Razor\Game.h" />
+    <ClInclude Include="src\Razor\Core\EntryPoint.h" />
+    <ClInclude Include="src\Razor\Core\Game.h" />
+    <ClInclude Include="src\Razor\Core\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Razor\Game.cpp" />
+    <ClCompile Include="src\Razor\Core\Game.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Razor\Game.h">
+    <ClInclude Include="src\Razor\Core\Game.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Razor\Core.h">
@@ -24,12 +24,15 @@
     <ClInclude Include="src\Razor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Razor\EntryPoint.h">
+    <ClInclude Include="src\Razor\Core\EntryPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Razor\Core\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Razor\Game.cpp">
+    <ClCompile Include="src\Razor\Core\Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
