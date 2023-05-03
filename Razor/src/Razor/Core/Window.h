@@ -1,12 +1,16 @@
 #pragma once
 
+#include <GLFW/glfw3.h>
+
 namespace Razor
 {
 	class Window
 	{
+	public:
 		Window();
 		~Window();
-	};
 
-	Window* CreateWindow();
+	private:
+		GLFWwindow* glfwWindow;
+	};
 }
