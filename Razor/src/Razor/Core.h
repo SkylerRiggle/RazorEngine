@@ -9,8 +9,3 @@
 #else
 	#error CURRENTLY ONLY SUPPORTS WINDOWS!
 #endif // RZ_PLATFORM_WINDOW
-
-
-#ifdef RZ_DEBUG_BUILD
-#else
-#endif // RZ_DEBUG_BUILD

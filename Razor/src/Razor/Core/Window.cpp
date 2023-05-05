@@ -6,11 +6,11 @@ Window::Window(const char* title, const int defaultWidth, const int defaultHeigh
 {
 	// Initialize the GLFW library
 	int initResult = glfwInit();
-	// TODO: Assert init succeeded
+	ASSERT(initResult);
 
 	// Create the new window
 	glfwWindow = glfwCreateWindow(defaultWidth, defaultHeight, title, NULL, NULL);
-	// TODO: Assert window is created
+	ASSERT(glfwWindow != nullptr)
 	screenWidth = defaultWidth;
 	screenHeight = defaultHeight;
 
