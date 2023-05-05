@@ -5,40 +5,53 @@
 
 namespace Razor
 {
+	struct WindowData
+	{
+	public:
+		const char* title;
+		int screenWidth;
+		int screenHeight;
+	};
+
 	/// <summary>
 	/// The application's graphical window.
 	/// </summary>
 	class Window
 	{
 	public:
-		/// <summary>
-		/// Create a new application window.
-		/// </summary>
-		/// <param name="title">The title for the window.</param>
-		/// <param name="defaultWidth">The default screen width.</param>
-		/// <param name="defaultHeight">The default screen height.</param>
-		Window(const char* title, const int defaultWidth, const int defaultHeight);
-		~Window();
+		virtual ~Window() = default;
 
 		/// <summary>
-		/// Poll window events and swap window buffers.
+		/// Update the window.
 		/// </summary>
-		void Update();
+		virtual void Update() = 0;
+
+		/// <summary>
+		/// Returns the game's title.
+		/// </summary>
+		/// <returns>The game's title.</returns>
+		inline const char* GetWindowTitle() { return this->windowData.title; }
 
 		/// <summary>
 		/// Returns the screen's current width.
 		/// </summary>
 		/// <returns>The screen's current width.</returns>
-		inline int GetScreenWidth() { return this->screenWidth; }
+		inline int GetScreenWidth() { return this->windowData.screenWidth; }
 
 		/// <summary>
 		/// Returns the screen's current height.
 		/// </summary>
 		/// <returns>The screen's current height.</returns>
-		inline int GetScreenHeight() { return this->screenHeight; }
+		inline int GetScreenHeight() { return this->windowData.screenHeight; }
 
-	private:
-		GLFWwindow* glfwWindow;
-		int screenWidth, screenHeight;
+		/// <summary>
+		/// Creates the appropriate application window.
+		/// </summary>
+		/// <param name="windowData">The default window data.</param>
+		/// <returns>A reference to the newly created window.</returns>
+		static Window* CreateWindow(WindowData windowData);
+
+	protected:
+		WindowData windowData;
 	};
 }

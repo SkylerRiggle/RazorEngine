@@ -2,7 +2,6 @@
 
 #include "../Core.h"
 #include "Window.h"
-#include <memory>
 
 namespace Razor
 {
@@ -12,9 +11,7 @@ namespace Razor
 	struct GameData 
 	{
 	public:
-		const char* title;
-		int defaultWidth;
-		int defaultHeight;
+		WindowData windowData;
 	};
 
 	/// <summary>
@@ -32,7 +29,7 @@ namespace Razor
 		void StartGame();
 
 	private:
-		std::unique_ptr<Window> window;
+		Window* window;
 	};
 
 	/// <summary>
