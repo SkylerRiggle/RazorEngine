@@ -1,4 +1,7 @@
 #pragma once
 
-#include "Razor/Game.h"
-#include "Razor/EntryPoint.h"
+// Game Application Entry Point
+#include "Razor/Core/EntryPoint.h"
+
+// Engine Features
+#include "Razor/Core/Game.h"

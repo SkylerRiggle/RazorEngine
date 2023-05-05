@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Game.h"
+
 #ifdef RZ_PLATFORM_WINDOWS
 
 extern Razor::Game* Razor::CreateGame();
