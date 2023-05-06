@@ -30,19 +30,19 @@ namespace Razor
 		/// Returns the game's title.
 		/// </summary>
 		/// <returns>The game's title.</returns>
-		inline const char* GetWindowTitle() { return this->windowData.title; }
+		inline const char* GetWindowTitle() { return this->m_windowData.title; }
 
 		/// <summary>
 		/// Returns the screen's current width.
 		/// </summary>
 		/// <returns>The screen's current width.</returns>
-		inline int GetScreenWidth() { return this->windowData.screenWidth; }
+		inline int GetScreenWidth() { return this->m_windowData.screenWidth; }
 
 		/// <summary>
 		/// Returns the screen's current height.
 		/// </summary>
 		/// <returns>The screen's current height.</returns>
-		inline int GetScreenHeight() { return this->windowData.screenHeight; }
+		inline int GetScreenHeight() { return this->m_windowData.screenHeight; }
 
 		/// <summary>
 		/// Creates the appropriate application window.
@@ -52,6 +52,6 @@ namespace Razor
 		static Window* CreateWindow(WindowData windowData);
 
 	protected:
-		WindowData windowData;
+		WindowData m_windowData;
 	};
 }

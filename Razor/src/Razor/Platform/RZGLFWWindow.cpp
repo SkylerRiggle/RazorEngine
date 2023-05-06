@@ -9,12 +9,12 @@ RZGLFWWindow::RZGLFWWindow(WindowData windowData)
 	ASSERT(initResult);
 
 	// Create the new window
-	glfwWindow = glfwCreateWindow(windowData.screenWidth, windowData.screenHeight, windowData.title, NULL, NULL);
+	m_glfwWindow = glfwCreateWindow(windowData.screenWidth, windowData.screenHeight, windowData.title, NULL, NULL);
 	ASSERT(glfwWindow != nullptr)
-	this->windowData = windowData;
+	m_windowData = windowData;
 
 	// Make the window's current context
-	glfwMakeContextCurrent(glfwWindow);
+	glfwMakeContextCurrent(m_glfwWindow);
 }
 
 RZGLFWWindow::~RZGLFWWindow()
@@ -29,5 +29,5 @@ void RZGLFWWindow::Update()
 	glfwPollEvents();
 
 	// Swap the window buffers
-	glfwSwapBuffers(glfwWindow);
+	glfwSwapBuffers(m_glfwWindow);
 }

@@ -2,22 +2,29 @@
 
 using namespace Razor;
 
+// Default application running flag value
+bool Game::s_applicationRunning = false;
+
 Game::Game(GameData gameData)
 {
 	// Create the application's window
-	window = Window::CreateWindow(gameData.windowData);
+	m_window = Window::CreateWindow(gameData.windowData);
 }
 
 Game::~Game()
 {
 	// Destroy the game window
-	delete window;
+	delete m_window;
 }
 
 void Game::StartGame()
 {
-	while (true)
+	// Mark the application to begin running
+	s_applicationRunning = true;
+
+	// Game loop
+	while (s_applicationRunning)
 	{
-		window->Update();
+		m_window->Update();
 	}
 }

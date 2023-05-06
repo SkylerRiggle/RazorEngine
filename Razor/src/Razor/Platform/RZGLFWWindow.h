@@ -14,7 +14,7 @@ namespace Razor
 		void Update() override;
 
 	private:
-		GLFWwindow* glfwWindow;
+		GLFWwindow* m_glfwWindow;
 	};
 }
 
