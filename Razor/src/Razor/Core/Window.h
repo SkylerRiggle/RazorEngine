@@ -11,6 +11,7 @@ namespace Razor
 		const char* title;
 		int screenWidth;
 		int screenHeight;
+		bool vSync;
 	};
 
 	/// <summary>
@@ -45,6 +46,18 @@ namespace Razor
 		inline int GetScreenHeight() { return this->m_windowData.screenHeight; }
 
 		/// <summary>
+		/// Sets the window's vsync status.
+		/// </summary>
+		/// <param name="enabled">The new status for the window's vsync.</param>
+		virtual void SetVSync(bool enabled) = 0;
+		
+		/// <summary>
+		/// Returns whether the window currently has vsync on.
+		/// </summary>
+		/// <returns>Whether the window currently has vsync on.</returns>
+		inline bool IsVSync() { return this->m_windowData.vSync; }
+
+		/// <summary>
 		/// Creates the appropriate application window.
 		/// </summary>
 		/// <param name="windowData">The default window data.</param>
@@ -52,6 +65,6 @@ namespace Razor
 		static Window* CreateWindow(WindowData windowData);
 
 	protected:
-		WindowData m_windowData;
+		WindowData m_windowData{};
 	};
 }
