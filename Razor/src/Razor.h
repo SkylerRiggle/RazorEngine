@@ -5,3 +5,6 @@
 
 // Engine Features
 #include "Razor/Core/Game.h"
+
+// Utility Features
+#include "Razor/Assert.h"

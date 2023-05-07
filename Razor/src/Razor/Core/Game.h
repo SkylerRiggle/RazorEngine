@@ -2,7 +2,6 @@
 
 #include "../Core.h"
 #include "Window.h"
-#include <memory>
 
 namespace Razor
 {
@@ -12,9 +11,7 @@ namespace Razor
 	struct GameData 
 	{
 	public:
-		const char* title;
-		int defaultWidth;
-		int defaultHeight;
+		WindowData windowData;
 	};
 
 	/// <summary>
@@ -23,6 +20,10 @@ namespace Razor
 	class RAZOR_API Game
 	{
 	public:
+		/// <summary>
+		/// Create a new game application.
+		/// </summary>
+		/// <param name="gameData">The game's default data.</param>
 		Game(GameData gameData);
 		~Game();
 
@@ -31,8 +32,14 @@ namespace Razor
 		/// </summary>
 		void StartGame();
 
+		/// <summary>
+		/// Signal the game application to close.
+		/// </summary>
+		static inline void CloseGame() { s_applicationRunning = false; }
+
 	private:
-		std::unique_ptr<Window> window;
+		Window* m_window;
+		static bool s_applicationRunning;
 	};
 
 	/// <summary>
