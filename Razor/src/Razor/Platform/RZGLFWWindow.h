@@ -2,6 +2,7 @@
 
 #include "../Core/Window.h"
 #include "../Core/Game.h"
+#include "../Assert.h"
 #include <GLFW/glfw3.h>
 
 namespace Razor

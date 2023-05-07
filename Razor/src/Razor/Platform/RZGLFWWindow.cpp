@@ -10,8 +10,9 @@ RZGLFWWindow::RZGLFWWindow(WindowData windowData)
 
 	// Create the new window
 	m_glfwWindow = glfwCreateWindow(windowData.screenWidth, windowData.screenHeight, windowData.title, NULL, NULL);
-	ASSERT(glfwWindow != nullptr)
+	ASSERT(m_glfwWindow != nullptr);
 	m_windowData = windowData;
+	glfwSetWindowUserPointer(m_glfwWindow, &m_windowData);
 
 	// Set the window's callback functions
 	SetEventCallbacks();

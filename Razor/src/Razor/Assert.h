@@ -5,7 +5,7 @@
 	#include <iostream>
 	#define DEBUG_BREAK() __debugbreak();
 	#define ASSERT(expr) \
-			if (!expr) \
+			if (!(expr)) \
 			{ \
 				std::cerr << "Assertion Failed: `" << #expr << '`' << std::endl << \
 				"Error occured at line " << __LINE__ << " in file " << __FILE__ << std::endl; \

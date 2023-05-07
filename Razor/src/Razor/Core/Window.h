@@ -1,8 +1,5 @@
 #pragma once
 
-#include <GLFW/glfw3.h>
-#include "../Assert.h"
-
 namespace Razor
 {
 	struct WindowData
