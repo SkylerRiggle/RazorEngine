@@ -42,7 +42,13 @@
     <ClInclude Include="src\Razor\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Razor\ECS\Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="src\Razor\ECS\ComponentManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Razor\ECS\ComponentArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -57,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Razor\ECS\EntityManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Razor\ECS\Scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
