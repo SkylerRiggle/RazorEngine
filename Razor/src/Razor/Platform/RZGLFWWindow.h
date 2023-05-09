@@ -9,6 +9,9 @@
 
 namespace Razor
 {
+	/// <summary>
+	/// The GLFW application window.
+	/// </summary>
 	class RZGLFWWindow : public Window
 	{
 	public:
