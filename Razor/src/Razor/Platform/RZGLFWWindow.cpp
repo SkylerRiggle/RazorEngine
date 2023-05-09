@@ -8,6 +8,16 @@ RZGLFWWindow::RZGLFWWindow(WindowData windowData)
 	int initResult = glfwInit();
 	ASSERT(initResult);
 
+	// Check if Vulkan is available for use
+	if (glfwVulkanSupported())
+	{
+		// TODO: Setup Vulkan Rendering
+	}
+	else
+	{
+		// TODO: Setup OpenGL Rendering
+	}
+
 	// Create the new window
 	m_glfwWindow = glfwCreateWindow(windowData.screenWidth, windowData.screenHeight, windowData.title, NULL, NULL);
 	ASSERT(m_glfwWindow != nullptr);
