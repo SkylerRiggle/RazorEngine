@@ -22,4 +22,5 @@ Entity Scene::CreateEntity()
 void Scene::DestroyEntity(Entity entity)
 {
 	m_entityManager->DestroyEntity(entity);
+	m_componentManager->EntityDestroyed(entity);
 }

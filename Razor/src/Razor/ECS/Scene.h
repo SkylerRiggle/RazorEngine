@@ -15,15 +15,9 @@ namespace Razor
 		void DestroyEntity(Entity entity);
 
 		template<typename T>
-		void RegisterComponentType()
-		{
-			m_componentManager->RegisterComponentType<T>();
-		}
-
-		template<typename T>
-		void AddComponent(Entity entity, T componentData)
-		{
-			m_componentManager->AddComponent(entity, componentData);
+		void AddComponent(Entity entity, T componentData) 
+		{ 
+			m_componentManager->AddComponent<T>(entity, componentData); 
 		}
 
 		template<typename T>
@@ -35,7 +29,7 @@ namespace Razor
 		template<typename T>
 		T& GetComponent(Entity entity)
 		{
-			return m_componentManager->GetComponent<T>(entity);
+			return m_componentManager->GetComponent(entity);
 		}
 
 	private:
