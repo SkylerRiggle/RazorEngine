@@ -45,10 +45,10 @@
     <ClInclude Include="src\Razor\ECS\Scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Razor\ECS\ComponentManager.h">
+    <ClInclude Include="src\Razor\ECS\ComponentArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Razor\ECS\ComponentArray.h">
+    <ClInclude Include="src\Razor\ECS\ComponentManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

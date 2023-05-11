@@ -4,8 +4,12 @@ using namespace Razor;
 
 void ComponentManager::EntityDestroyed(Entity entity)
 {
-	for (auto const& pair : m_typeToArray)
+	for (const auto& pair : m_componentArrays)
 	{
-		auto const& componentArray = pair.second;
+		const auto& componentArray = pair.second;
+		if (componentArray->Has(entity))
+		{
+			componentArray->Remove(entity);
+		}
 	}
 }

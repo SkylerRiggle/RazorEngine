@@ -15,21 +15,33 @@ namespace Razor
 		void DestroyEntity(Entity entity);
 
 		template<typename T>
-		void AddComponent(Entity entity, T componentData) 
+		inline void AddComponent(Entity entity) 
 		{ 
-			m_componentManager->AddComponent<T>(entity, componentData); 
+			this->AddComponent<T>(entity, {}); 
 		}
 
 		template<typename T>
-		void RemoveComponent(Entity entity)
+		inline void AddComponent(Entity entity, T componentData)
+		{
+			m_componentManager->AddComponent(entity, componentData);
+		}
+
+		template<typename T>
+		inline void RemoveComponent(Entity entity)
 		{
 			m_componentManager->RemoveComponent<T>(entity);
 		}
 
 		template<typename T>
-		T& GetComponent(Entity entity)
+		inline T& GetComponent(Entity entity)
 		{
-			return m_componentManager->GetComponent(entity);
+			return m_componentManager->GetComponent<T>(entity);
+		}
+
+		template<typename T>
+		inline bool HasComponent(Entity entity)
+		{
+			return m_componentManager->HasComponent<T>(entity);
 		}
 
 	private:
