@@ -90,6 +90,7 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Razor\ECS\SceneManager.h" />
     <ClInclude Include="src\Razor\ECS\ComponentArray.h" />
     <ClInclude Include="src\Razor\ECS\ComponentManager.h" />
     <ClInclude Include="src\Razor\ECS\EntityManager.h" />
@@ -104,6 +105,7 @@
     <ClInclude Include="src\Razor\Types.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Razor\ECS\SceneManager.cpp" />
     <ClCompile Include="src\Razor\ECS\ComponentManager.cpp" />
     <ClCompile Include="src\Razor\ECS\EntityManager.cpp" />
     <ClCompile Include="src\Razor\ECS\Scene.cpp" />
