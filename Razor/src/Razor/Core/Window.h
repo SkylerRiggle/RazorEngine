@@ -1,5 +1,7 @@
 #pragma once
 
+#include "./Core.h"
+
 namespace Razor
 {
 	struct WindowData
@@ -14,7 +16,7 @@ namespace Razor
 	/// <summary>
 	/// The application's graphical window.
 	/// </summary>
-	class Window
+	class RAZOR_API Window
 	{
 	public:
 		virtual ~Window() = default;

@@ -15,22 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Razor\Core\Game.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Razor\Core.h">
+    <ClInclude Include="src\Razor\Core\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Razor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Razor\Core\EntryPoint.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Razor\Core\Window.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Razor\Assert.h">
+    <ClInclude Include="src\Razor\Core\Assert.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Razor\Platform\RZGLFWWindow.h">
@@ -39,7 +33,7 @@
     <ClInclude Include="src\Razor\ECS\EntityManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Razor\Types.h">
+    <ClInclude Include="src\Razor\Core\Types.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Razor\ECS\Scene.h">
@@ -51,14 +45,8 @@
     <ClInclude Include="src\Razor\ECS\ComponentManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Razor\ECS\SceneManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Razor\Core\Game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\Razor\Platform\RZGLFWWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

@@ -2,13 +2,14 @@
 
 #include "EntityManager.h"
 #include "ComponentManager.h"
+#include "../Core/Core.h"
 
 namespace Razor
 {
 	/// <summary>
 	/// A scene structure encapsulates a group of entities and their components.
 	/// </summary>
-	class Scene
+	class RAZOR_API Scene
 	{
 	public:
 		/// <summary>
