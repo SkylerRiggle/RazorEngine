@@ -25,11 +25,12 @@ int main(int argc, void* argv[])
 	LOG("Testing Logger Statement.");
 	WARN("Testing Warning Statement.");
 	ASSERT(entity == NULL); // Should not trigger
-	//ASSERT(false) // Should trigger
+	ASSERT(false) // Should trigger
 
 	// Update Testing
 	while (true)
 	{
+		LOG("TEST");
 		window->Update();
 	}
 
