@@ -1,8 +1,7 @@
 #pragma once
 
 #include "../Core/Window.h"
-#include "../Core/Game.h"
-#include "../Assert.h"
+#include "../Core/Assert.h"
 
 #define GLFW_INCLUDE_VULKAN
 #include <GLFW/glfw3.h>

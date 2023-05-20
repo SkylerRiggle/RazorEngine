@@ -29,7 +29,7 @@ namespace Razor
 			}
 
 			// Otherwise, create the array, then add the component
-			std::shared_ptr<ComponentArray<T>> newArray = std::make_shared<ComponentArray<T>>(new ComponentArray<T>());
+			std::shared_ptr<ComponentArray<T>> newArray = std::make_shared<ComponentArray<T>>();
 			newArray->Add(entity, componentData);
 			m_componentArrays.insert({componentName, newArray});
 		}

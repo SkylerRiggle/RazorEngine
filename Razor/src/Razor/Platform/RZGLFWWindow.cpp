@@ -71,6 +71,6 @@ void RZGLFWWindow::SetEventCallbacks()
 	glfwSetWindowCloseCallback(m_glfwWindow, [](GLFWwindow* window)
 	{
 			// Close the game application
-			Game::CloseGame();
+			// TODO
 	});
 }

@@ -1,14 +1,37 @@
 #include <Razor.h>
 
-Razor::Game* Razor::CreateGame()
+int main(int argc, void* argv[])
 {
-	// Populate the default game data.
-	Razor::GameData gameData{};
-	gameData.windowData.title = "Sandbox Game";
-	gameData.windowData.screenWidth = 800;
-	gameData.windowData.screenHeight = 600;
-	gameData.windowData.vSync = true;
+	// Window Data Testing
+	Razor::WindowData windowData = {};
+	windowData.title = "Sandbox Application";
+	windowData.screenWidth = 800;
+	windowData.screenHeight = 700;
+	windowData.vSync = true;
 
-	// Return a new game application reference.
-	return new Razor::Game(gameData);
+	// Window Creation Testing
+	Razor::Window* window = Razor::Window::CreateWindow(windowData);
+
+	// Basic Scene Testing
+	Razor::Scene* scene = new Razor::Scene();
+	Entity entity = scene->CreateEntity();
+	scene->AddComponent<int>(entity, 5);
+	LOG(scene->HasComponent<int>(entity));
+	scene->RemoveComponent<int>(entity);
+	LOG(scene->HasComponent<int>(entity));
+	scene->DestroyEntity(entity);
+
+	// Logger Testing
+	LOG("Testing Logger Statement.");
+	WARN("Testing Warning Statement.");
+	ASSERT(entity == NULL); // Should not trigger
+	//ASSERT(false) // Should trigger
+
+	// Update Testing
+	while (true)
+	{
+		window->Update();
+	}
+
+	return 0;
 }

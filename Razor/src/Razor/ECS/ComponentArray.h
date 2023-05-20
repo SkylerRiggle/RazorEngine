@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../Types.h"
-#include "../Assert.h"
+#include "../Core/Types.h"
+#include "../Core/Assert.h"
 #include <array>
 #include <unordered_map>
 
@@ -59,13 +59,16 @@ namespace Razor
 			size_t removeIndex = m_entityToIndex[entity];
 			m_size--;
 
-			// Erase the old data
-			m_components[removeIndex] = m_components[m_size];
-			m_entityToIndex.erase(entity);
-			m_indexToEntity.erase(m_size);
-
-			// Reevaluate index and entity maps
+			// Remove the relevant data
 			Entity lastEntity = m_indexToEntity[m_size];
+			m_indexToEntity.erase(m_size);
+			m_entityToIndex.erase(entity);
+
+			// Check to see if we removed the component at the end
+			if (m_size == removeIndex) { return; }
+
+			// Compact the array
+			m_components[removeIndex] = m_components[m_size];
 			m_entityToIndex[lastEntity] = removeIndex;
 			m_indexToEntity[removeIndex] = lastEntity;
 		}

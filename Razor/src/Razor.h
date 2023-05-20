@@ -1,10 +1,6 @@
 #pragma once
 
-// Game Application Entry Point
-#include "Razor/Core/EntryPoint.h"
-
 // Engine Features
-#include "Razor/Core/Game.h"
-
-// Utility Features
-#include "Razor/Assert.h"
+#include "Razor/Core/Window.h"
+#include "Razor/Core/Assert.h"
+#include "Razor/ECS/Scene.h"

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../Types.h"
-#include "../Assert.h"
+#include "../Core/Types.h"
+#include "../Core/Assert.h"
 #include <queue>
 
 namespace Razor
