@@ -16,11 +16,16 @@ int main(int argc, void* argv[])
 	Razor::Scene* scene = new Razor::Scene();
 	Entity entity = scene->CreateEntity();
 	scene->AddComponent<int>(entity, 5);
-	std::printf("%d\n", scene->HasComponent<int>(entity));
+	LOG(scene->HasComponent<int>(entity));
 	scene->RemoveComponent<int>(entity);
-	std::printf("%d\n", scene->HasComponent<int>(entity));
+	LOG(scene->HasComponent<int>(entity));
 	scene->DestroyEntity(entity);
-	ASSERT(entity == NULL);
+
+	// Logger Testing
+	LOG("Testing Logger Statement.");
+	WARN("Testing Warning Statement.");
+	ASSERT(entity == NULL); // Should not trigger
+	//ASSERT(false) // Should trigger
 
 	// Update Testing
 	while (true)
