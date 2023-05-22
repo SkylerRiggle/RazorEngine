@@ -33,5 +33,9 @@ int main(int argc, void* argv[])
 		window->Update();
 	}
 
+	// Cleanup
+	delete window;
+	delete scene;
+
 	return 0;
 }
