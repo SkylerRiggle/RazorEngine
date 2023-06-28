@@ -27,8 +27,14 @@ int main(int argc, void* argv[])
 	ASSERT(entity == NULL); // Should not trigger
 	//ASSERT(false) // Should trigger
 
+	// Event System Testing
+	bool isRunning = true;
+	EventKey eventKey = Razor::Events::CreateEvent();
+	Razor::Events::Invoke(eventKey);
+	Razor::Events::DeleteEvent(eventKey);
+
 	// Update Testing
-	while (true)
+	while (isRunning)
 	{
 		window->Update();
 	}

@@ -45,6 +45,9 @@
     <ClInclude Include="src\Razor\ECS\ComponentManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Razor\Events\Events.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Razor\Platform\RZGLFWWindow.cpp">
@@ -60,6 +63,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Razor\ECS\ComponentManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Razor\Events\Events.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
