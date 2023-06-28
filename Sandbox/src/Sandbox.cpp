@@ -29,9 +29,6 @@ int main(int argc, void* argv[])
 
 	// Event System Testing
 	bool isRunning = true;
-	EventKey eventKey = Razor::Events::CreateEvent();
-	Razor::Events::Invoke(eventKey);
-	Razor::Events::DeleteEvent(eventKey);
 
 	// Update Testing
 	while (isRunning)
