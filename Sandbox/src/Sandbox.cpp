@@ -27,10 +27,8 @@ int main(int argc, void* argv[])
 	ASSERT(entity == NULL); // Should not trigger
 	//ASSERT(false) // Should trigger
 
-	// Event System Testing
-	bool isRunning = true;
-
 	// Update Testing
+	bool isRunning = true;
 	while (isRunning)
 	{
 		window->Update();
