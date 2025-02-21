@@ -131,11 +131,14 @@
     <ClInclude Include="src\core\Types.h" />
     <ClInclude Include="src\dbg\Assert.h" />
     <ClInclude Include="src\dbg\Logger.h" />
+    <ClInclude Include="src\ecs\Registry.h" />
+    <ClInclude Include="src\ecs\Types.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\dbg\Assert.cpp" />
     <ClCompile Include="src\dbg\Logger.cpp" />
+    <ClCompile Include="src\ecs\Registry.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
