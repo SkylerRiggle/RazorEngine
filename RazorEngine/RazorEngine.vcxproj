@@ -131,6 +131,7 @@
     <ClInclude Include="src\core\Types.h" />
     <ClInclude Include="src\dbg\Assert.h" />
     <ClInclude Include="src\dbg\Logger.h" />
+    <ClInclude Include="src\dstruct\BlockList.h" />
     <ClInclude Include="src\ecs\Registry.h" />
     <ClInclude Include="src\ecs\Types.h" />
   </ItemGroup>
@@ -139,6 +140,7 @@
     <ClCompile Include="src\dbg\Assert.cpp" />
     <ClCompile Include="src\dbg\Logger.cpp" />
     <ClCompile Include="src\ecs\Registry.cpp" />
+    <ClCompile Include="src\ecs\Types.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

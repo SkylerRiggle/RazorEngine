@@ -17,8 +17,6 @@ namespace rz {
 	private:
 		static uint32 s_next_id;
 	};
-
-	uint32 ComponentID::s_next_id = 0;
 }
 
 #endif // ! RZ_ECS_TYPES_H
