@@ -132,6 +132,7 @@
     <ClInclude Include="src\dbg\Assert.h" />
     <ClInclude Include="src\dbg\Logger.h" />
     <ClInclude Include="src\dstruct\BlockList.h" />
+    <ClInclude Include="src\dstruct\Tuple.h" />
     <ClInclude Include="src\ecs\Registry.h" />
     <ClInclude Include="src\ecs\Types.h" />
   </ItemGroup>

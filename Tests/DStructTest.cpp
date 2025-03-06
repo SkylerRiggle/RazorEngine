@@ -1,6 +1,7 @@
 #include "pch.h"
 #include <CppUnitTest.h>
 
+#include "../RazorEngine/src/dstruct/Tuple.h"
 #include "../RazorEngine/src/dstruct/BlockList.h"
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
@@ -34,6 +35,23 @@ namespace Tests
 					Assert::AreEqual(total_size - pop_count, list.Size());
 				}
 			}
+		}
+
+		TEST_METHOD(TestTuple)
+		{
+			rz::Tuple<int, float, double> tuple(1, 2.0f, 3.0);
+
+			Assert::AreEqual(1, tuple.Get<int>());
+			Assert::AreEqual(2.0f, tuple.Get<float>());
+			Assert::AreEqual(3.0, tuple.Get<double>());
+
+			tuple.Get<int>() = 10;
+			tuple.Get<float>() = 20.0f;
+			tuple.Get<double>() = 30.0;
+
+			Assert::AreEqual(10, tuple.Get<int>());
+			Assert::AreEqual(20.0f, tuple.Get<float>());
+			Assert::AreEqual(30.0, tuple.Get<double>());
 		}
 	};
 }

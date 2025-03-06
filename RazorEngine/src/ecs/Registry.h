@@ -14,7 +14,7 @@ namespace rz {
 		static size_t s_pool_block_size;
 
 		EntityID m_next_id = 0;
-		BlockList<EntityID> m_id_pool{ s_entity_pool_block_size };
+		BlockList<EntityID> m_id_pool{ s_pool_block_size };
 	};
 }
 
